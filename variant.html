@@ -2,50 +2,6 @@
 
 <!--
 
-    Welcome to the light side of the source, young padawan.
-
-    One step closer to learn something interesting you are...
-
-                               ____
-                            _.' :  `._
-                        .-.'`.  ;   .'`.-.
-               __      / : ___\ ;  /___ ; \      __
-             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
-             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
-                  `:-.._J '-.-'L__ `-.-' L_..-;'
-                    "-.__ ;  .-"  "-.  : __.-"
-                        L ' /.======.\ ' J
-                         "-.   "__"   .-"
-                        __.l"-:_JL_;-";.__
-                     .-j/'.;  ;""""  / .'\"-.
-                   .' /:`. "-.:     .-" .';  `.
-                .-"  / ;  "-. "-..-" .-"  :    "-.
-             .+"-.  : :      "-.__.-"      ;-._   \
-             ; \  `.; ;                    : : "+. ;
-             :  ;   ; ;                    : ;  : \:
-             ;  :   ; :                    ;:   ;  :
-            : \  ;  :  ;                  : ;  /  ::
-            ;  ; :   ; :                  ;   :   ;:
-            :  :  ;  :  ;                : :  ;  : ;
-            ;\    :   ; :                ; ;     ; ;
-            : `."-;   :  ;              :  ;    /  ;
-             ;    -:   ; :              ;  : .-"   :
-             :\     \  :  ;            : \.-"      :
-              ;`.    \  ; :            ;.'_..-=  / ;
-              :  "-.  "-:  ;          :/."      .'  :
-               \         \ :          ;/  __        :
-                \       .-`.\        /t-""  ":-+.   :
-                 `.  .-"    `l    __/ /`. :  ; ; \  ;
-                   \   .-" .-"-.-"  .' .'j \  /   ;/
-                    \ / .-"   /.     .'.' ;_:'    ;
-                     :-""-.`./-.'     /    `.___.'
-                           \ `t  ._  /
-                            "-.t-._:'
-
--->
-
-<!--
-
     So you'd like to know how to use impress.js?
 
     You've made the first, very important step - you're reading the source code.
@@ -63,16 +19,16 @@
 -->
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Bagisto Hacktober fest - 2019</title>
 
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
     <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
 
     <!--
@@ -114,17 +70,19 @@
     it can be found later, when `hint` element is being described.
 
 -->
+
 <body class="impress-not-supported">
 
-<!--
+    <!--
     For example this fallback message is only visible when there is `impress-not-supported` class on body.
 -->
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
+            simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
 
-<!--
+    <!--
 
     Now that's the core element used by impress.js.
 
@@ -149,9 +107,9 @@
     to next slide after a timeout expires.
 
 -->
-<div id="impress">
+    <div id="impress">
 
-    <!--
+        <!--
 
         Here is where interesting thing start to happen.
 
@@ -171,14 +129,14 @@
         Plugins: For first slide, set the autoplay time to a custom 10 seconds.
 
     -->
-    <div id="bored" class="step" data-x="-1000" data-y="-1500" data-z="-1000">
-        <q id="big">
-            <p class="welcome">Welcome</p>
-            <p class="thoughts">to <span class="bagisto-text">Bagisto</span> Hacktober Fest'19</p>
-        </q>
-    </div>
+        <div id="bored" class="step" data-x="-1000" data-y="-1500" data-z="-100">
+            <q id="big">
+                <p class="welcome">Welcome</p>
+                <p class="thoughts">to Bagisto Hacktober Fest'19</p>
+            </q>
+        </div>
 
-    <!--
+        <!--
 
         The `id` attribute of the step element is used to identify it in the URL, but it's optional.
         If it is not defined, it will get a default value of `step-N` where N is a number of slide.
@@ -193,11 +151,12 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
 
     -->
-    <div class="step" data-x="0" data-y="-1500">
-        <q style="margin-top: auto; margin-bottom: auto;">And we are very excited that its our <b>first ever community event</b>.</q>
-    </div>
+        <div class="step" data-x="-1500" data-y="-2000" data-z="-333">
+            <q style="margin-top: auto; margin-bottom: auto;">And we are very excited that its our <b>first ever
+                    community event</b>.</q>
+        </div>
 
-    <!--
+        <!--
 
         This is an example of step element being scaled.
 
@@ -207,14 +166,14 @@
         down (4 times) to make it back to its correct size.
 
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <h1 class="bagisto-text">Bagisto</h1>
-        <span class="try">ecommerce framework</span>
+        <div id="title" class="step" data-x="-2000" data-y="-2500" data-z="-666">
+            <h1>Bagisto</h1>
+            <span class="try">ecommerce framework</span>
 
-        <!-- <span class="footnote"><sup>*</sup> no rhyme intended</span> -->
-    </div>
+            <!-- <span class="footnote"><sup>*</sup> no rhyme intended</span> -->
+        </div>
 
-    <!--
+        <!--
 
         This element introduces rotation.
 
@@ -222,43 +181,18 @@
         element should be rotated by 90 degrees clockwise.
 
     -->
-    <div id="its" class="step" data-x="250" data-y="3000" data-z="-999" data-rotate="90" data-scale="5">
-        <p>We've <strong>curated bugs and feature requests for you</strong> <br />
-            inspired by the idea behind <a href="https://github.com/bagisto/bagisto/projects/1#column-6700626">GitHub</a>
+        <div id="its" class="step" data-x="-2500" data-y="-3000" data-z="-999" data-rotate="90" data-scale="5">
+            <p>We've <strong>curated bugs and feature requests for you</strong> <br />
+                inspired by the idea behind <a
+                    href="https://github.com/bagisto/bagisto/projects/1#column-6700626">GitHub</a> <br />
+                all of them are easy <strong>targets scoping from Laravel to Bagisto.</strong></p>
+        </div>
 
-            <br />
+        <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="720" data-scale="6">
+            <p>You just need to <b>Fork</b> <span class="thoughts">Bagisto</span></p>
+        </div>
 
-            all of them are easy
-
-            <strong>targets scoping from Laravel to
-                <span class="bagisto-text">Bagisto</span>
-                .
-            </strong>
-
-        </p>
-    </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>You just need to
-            <b>Fork</b>
-
-            <span class="thoughts">
-                <span class="bagisto-text">Bagisto</span>
-            </span>
-        </p>
-    </div>
-
-    <!-- <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>We've <strong>curated bugs and feature requests for you</strong> <br/>
-        inspired by the idea behind <a href="https://github.com/bagisto/bagisto/projects/1#column-6700626">GitHub</a> <br/>
-        all of them are easy <strong>targets scoping from Laravel to Bagisto.</strong></p>
-    </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>You just need to <b>clone</b> <span class="thoughts">Bagisto <a href="https://github.com/bagisto/bagisto/">GitHub</a></span></p>
-    </div> -->
-
-    <!--
+        <!--
 
         And now it gets really exciting! We move into third dimension!
 
@@ -267,11 +201,12 @@
         positioned far away from us (by 3000px).
 
     -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1" style="color: red;">
-        <p>And you are not going<b> empty</b> handed</p>
-    </div>
+        <div id="tiny" class="step" data-x="-3000" data-y="-3500" data-z="-1332" data-rotate="300" data-scale="1"
+            style="color: red;">
+            <p>and you are not going<b> empty</b> handed</p>
+        </div>
 
-    <!--
+        <!--
 
         This step here doesn't introduce anything new when it comes to data attributes, but you
         should notice in the demo that some words of this text are being animated.
@@ -295,56 +230,52 @@
         See src/plugins/rel/README.md for more information.
 
     -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6" style="color: green;">
-        <p>by doing <b class="positioning"> four PR</b>, <b class="rotating">and getting</b> them <b class="scaling">merged</b> & <b class="scaling">accepted</b>.</p>
-    </div>
+        <div id="ing" class="step" data-x="-3500" data-y="-4000" data-z="-1665" data-rotate="270" data-scale="6"
+            style="color: green;">
+            <p>by doing <b class="positioning"> four PR</b>, <b class="rotating">and getting</b> them <b
+                    class="scaling">merged</b> & accepted.</p>
+        </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>Will get you goodies from <b class="imagination bagisto-text">Bagisto</b> and our event <b>sponsors</b></p>
-    </div>
+        <div id="ing" class="step" data-x="-4000" data-y="-4500" data-z="-1998" data-rotate="270" data-scale="6"
+            style="color: blue;">
+            <p>The process <b class="positioning"> might</b>, <b class="scaling">take</b> <span
+                    class="rotating">time</span>.</p>
+        </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2300" data-scale="4">
-        <p>Are you ready? </p>
-        <q><b>Open terminal > </b> <br/> git clone https://github.com/username/bagisto.git</q>
-    </div>
+        <div id="imagination" class="step" data-x="-4500" data-y="-5000" data-z="-2331" data-scale="6">
+            <p>will get you <b>goodies</b> from <b class="imagination">Bagisto and our event sponsors</b></p>
+        </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>One more thing...</p>
-    </div>
+        <div id="source" class="step" data-x="6300" data-y="5500" data-z="-19" data-rotate="20" data-scale="4"
+            style="color:green;">
+            <p>Are you ready? </p>
+            <q>
+                <b>Open github.com/bagisto/bagisto</b>
+                <br />
+            </q>
+        </div>
 
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">{please}</span> <span class="you">go</span> <span class="noticed">through</span> <span class="its">our</span> <span class="in">contribution </span> guide <b>lines</b></p>
-    </div>
+        <div id="source" class="step" data-x="-5000" data-y="-6500" data-z="-2664" data-rotate="20" data-scale="4">
+            <span class="positioning">git clone https://github.com/username/bagisto.git</span>
+        </div>
 
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10"
-        data-scale="2">
-        <p>
-            <span class="have">{please}</span>
+        <div id="one-more-thing" class="step" data-x="-5500" data-y="-6000" data-z="-2997" data-scale="2">
+            <p>one more thing...</p>
+        </div>
 
-            <span class="you">go</span>
+        <div id="its-in-3d" class="step" data-x="-6000" data-y="-6500" data-z="-3330" data-rotate-x="-40"
+            data-rotate-y="10" data-scale="2">
+            <p><span class="have">{please}</span> <span class="you">go</span> <span class="noticed">through</span> <span
+                    class="its">our</span> <span class="in">contribution </span> guide <b>lines</b></p>
+        </div>
 
-            <span class="noticed">through</span>
+        <div id="its-in-3d" class="step" data-x="-6500" data-y="-7000" data-z="-3663" data-rotate-x="-40"
+            data-rotate-y="10" data-scale="2">
+            <span class="footnote"><b>github.com/bagisto/bagisto/blob/master/CONTRIBUTING.md</b></span>
+        </div>
 
-            <span class="its">our</span>
 
-            <span class="in">contribution </span>
-            guide
-
-            <b>lines</b>
-        </p>
-    </div>
-
-    <div id="its-in-3d" class="step" data-x="6600" data-y="4600" data-z="-600" data-rotate-x="-40" data-rotate-y="10"
-        data-scale="2">
-        <span class="footnote"><b>github.com/bagisto/bagisto/blob/master/CONTRIBUTING.md</b></span>
-    </div>
-
-    <div id="its-in-3d" class="step" data-x="6600" data-y="4900" data-z="-600" data-rotate-x="-40" data-rotate-y="10"
-        data-scale="2">
-        <img src="css/hacktober.svg" style="height: 250px;" />
-    </div>
-
-    <!--
+        <!--
 
         And the last one shows full power and flexibility of impress.js.
 
@@ -356,9 +287,9 @@
         as `data-rotate` (these two are basically aliases).
 
     -->
- -->
+        -->
 
-    <!--
+        <!--
 
         So to summarize of all the possible attributes used to position presentation steps, we have:
 
@@ -373,19 +304,19 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
 
     -->
-    <div id="overview" class="step" data-x="2500" data-y="1500" data-z="0" data-scale="10">
+        <div id="overview" class="step" data-x="7000" data-y="7500" data-z="0" data-scale="10">
+        </div>
+
     </div>
 
-</div>
-
-<!--
+    <!--
     This is a UI plugin. You can read more about plugins in src/plugins/README.md.
     For now, I'll just tell you that this adds some graphical controls to navigate the
     presentation. In the CSS file you can style them as you want. We've put them bottom right.
 -->
-<div id="impress-toolbar"></div>
+    <div id="impress-toolbar"></div>
 
-<!--
+    <!--
 
     Hint is not related to impress.js in any way.
 
@@ -409,17 +340,17 @@
     Just sayin' ;)
 
 -->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate. <br/>
-       Press 'P' to launch speaker console.</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) {
-    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
-}
-</script>
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate. <br />
+            Press 'P' to launch speaker console.</p>
+    </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+        }
+    </script>
 
-<!--
+    <!--
 
     Last, but not least.
 
@@ -434,10 +365,10 @@ if ("ontouchstart" in document.documentElement) {
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
 
 -->
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 
-<!--
+    <!--
 
     The `impress()` function also gives you access to the API that controls the presentation.
 
@@ -463,6 +394,7 @@ if ("ontouchstart" in document.documentElement) {
 -->
 
 </body>
+
 </html>
 
 <!--
@@ -509,4 +441,3 @@ if ("ontouchstart" in document.documentElement) {
     Cheers!
 
 -->
-
